@@ -1,0 +1,25 @@
+input{
+   padding: 2px;
+   margin: 6px;
+   width: 150px;
+   position: center;
+}
+.level{
+    width: 83px;
+}
+select{
+width: 710px;
+margin: auto;
+    
+}
+#imp{
+    height: 400px;
+    width: 800px;
+    background-color: white;
+}
+body{
+    background-color: bisque;
+}
+h4{
+    margin: 10px;
+}

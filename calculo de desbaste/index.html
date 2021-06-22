@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de Serviço em CNC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>Orçamento de serviços em CNC</h3>
+        <section>
+            <!--<div class="input">
+            <label>
+                <select name="orça" id="select-box">
+                    <option value="01">Desbaste</option>
+                    <option value="02">Recorte</option>
+                    <option value="03">Arte</option>
+                    <option value="04">madeira</option>   
+                </select>
+            </label>
+        </div>-->
+            <div class="dados-clt">
+                <h4>Dados do Cliente:</h4>
+                <input type="text" id="nome">
+                <input type="date" id="data">
+                <input type="tel" id="tel" placeholder="(xx)xx-xx-xx-xx">
+                <input type="button" value="atualizar" onclick="att()">
+            </div>
+            <div class="option" id="desbaste">
+                <h4>Serviço de desbaste / usinagem 3D CNC:</h2>
+                <input type="number" id="alt" placeholder="Altura">
+                <input type="number" id="larg" placeholder="Largura">
+                <input type="number" id="prof" placeholder="Profundidade">
+                <input type="button" value="adicionar" onclick="desb()">
+            </div>
+            <div class="option" id="recorte">
+                <h4>Serviço de recorte CNC:</h2>
+            <input type="number" id="n1" placeholder="Altura">
+            <input type="number" id="n2" placeholder="Largura">
+            <input type="number" id="n3" placeholder="Profundidade">
+            <input type="button" id="add" value="Adicionar" onclick="rec()">
+            </div>
+             
+             <div class="option" id="madeira">
+                <h4>Material em madeira utilizado:</h2>
+                <input type="number" id="larg-m" placeholder="Largura">
+                <input type="number" id="comp" placeholder="Comprimento">
+                <input type="number" id="expes" placeholder="Expessura">
+                <input type="button" value="adicionar" onclick="mad()">
+            </div>
+            <div class="option" id="arte">
+                <h4>Serviço de design gráfico:</h2>
+                <input type="radio" class="level" id="smp" name="art" value="20">
+                <label for="smp">Simples</label>
+                <input type="radio" class="level" id="2d" name="art" value="30">
+                <label for="2d">Grafico em 2D</label>
+                <input type="radio" class="level" id="3d" name="art" value="50">
+                <label for="3d">Escultura 3D</label>
+                <input type="button" value="adicionar" onclick="arte()">
+             </div>
+        </section>
+        <section id="imp">
+            <div>Orçamento de Serviço em CNC</div>
+            <p id="p01"></p>
+            <ol id="list">
+            </ol>
+            <p id="res"></p>
+        </section>
+    </header>
+</body>
+<script src="scrypt.js"></script>
+</html>
